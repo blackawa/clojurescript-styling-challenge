@@ -6,10 +6,13 @@
 
  :dependencies
  [[rum "0.12.3"]
-  [clj-commons/cljss "1.6.4"]]
+  [clj-commons/cljss "1.6.4"]
+  [stylefy "3.0.0"]
+  [stylefy/rum "3.0.0"]]
 
  :dev-http {8080 "tailwindcss-public"
-            8081 "cljss-public"}
+            8081 "cljss-public"
+            8082 "stylefy-public"}
 
  :builds
  {:tailwindcss
@@ -19,4 +22,8 @@
   :cljss
   {:target :browser
    :output-dir "cljss-public/js"
-   :modules {:main {:init-fn challenges.styling.clojurescript.cljss.app/init}}}}}
+   :modules {:main {:init-fn challenges.styling.clojurescript.cljss.app/init}}}
+  :stylefy
+  {:target :browser
+   :output-dir "stylefy-public/js"
+   :modules {:main {:init-fn challenges.styling.clojurescript.stylefy.app/init}}}}}

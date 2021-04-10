@@ -14,6 +14,7 @@
   "scripts": {
     "build:tailwindcss": "tailwindcss-cli build -o tailwindcss-public/main.css",
     "watch:tailwindcss-app": "shadow-cljs watch tailwindcss",
-    "watch:cljss-app": "shadow-cljs watch cljss"
+    "watch:cljss-app": "shadow-cljs watch cljss",
+    "watch:stylefy-app": "shadow-cljs watch stylefy"
   }
 }
